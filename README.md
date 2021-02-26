@@ -12,7 +12,7 @@
 
 [azure]: assets/azure.png
 
-The platform is mounted in Ubuntu VM instance on azure cloud.
+Luz del Alba™ platform is mounted in Ubuntu VM instance on azure cloud.
 
 Since we are using docker to release the artifacts, within the VM we are managing Docker Swarm.
 
@@ -24,13 +24,11 @@ Every project contains this file
 .github/workflows/deploy.yml 
 ```
 
-This file is allowing us to perform Continuous Integration and Continuous Deployment out of the box via `GitHub Actions`
-
-This enables us to deploy to our environment every time you commit on `master`
+This file is allowing us to perform Continuous Integration and Continuous Deployment out of the box via `GitHub Actions`, so,  every time you commit on `master` you code is being deployed to our environment.
 
 ### Services
 
-On this platform where are using several servis like `redis`, `mongodb`, `postgresql` and is maintained by us, you will
+On this platform where are using several services like `redis`, `mongodb`, `postgresql` and they are maintained by us, you will
 be able to stand up/tear down the services that we are using.
 
 Please refer
@@ -41,9 +39,9 @@ https://github.com/Luz-del-Alba/infrastructure
 
 # Application architecture
 
-We are using microservice fashion arquitecture to out platform.
+We are using microservice fashion architecture for our platform.
 
-as righ now, we are using only two microsevices
+Microservices are described down below: 
 
 gateway: |
 
