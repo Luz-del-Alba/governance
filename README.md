@@ -1,6 +1,6 @@
 # Welcome to Luz del Alba™ Governance
 
-# Architecture
+# Platform
 
 ![alt text][logo]
 
@@ -12,7 +12,7 @@
 
 [azure]: assets/azure.png
 
-Luz del Alba™ platform is mounted in Ubuntu VM instance on azure cloud.
+Luz del Alba™ platform is mounted in an Ubuntu VM instance on Azure cloud.
 
 Since we are using docker to release the artifacts, within the VM we are managing Docker Swarm.
 
@@ -37,7 +37,7 @@ Please refer
 https://github.com/Luz-del-Alba/infrastructure
 ```
 
-# Application architecture
+# Application Architecture
 
 We are using microservice fashion architecture for our platform.
 
@@ -49,23 +49,50 @@ gateway: |
     API Gateway
 ```
 
-rate: |
-
-```
-   Microservice using MongoDB that is performing the evaluation of the prospects, given the information they provided on the frontend.
-```
-
-policy: |
-
-```
-    Microservice that is in charge of managing the transactional data such as customer information as well as the policy management.
-```
-
 app: |
 
 ```
     Frontend App
 ``` 
 
-# How the platform works
+rate: |
 
+```
+   Microservice that is using MongoDB that is performing the evaluation of the prospects, given the information they provided on the frontend.
+```
+
+policy: |
+
+```
+    Microservice that is using PostgreSQL that is in charge of managing the transactional data such as customer information as well as the policy management.
+```
+
+# How Platform works
+
+### Dashboard
+
+![alt text][dashboard]
+
+[dashboard]: assets/image1.jpg
+
+This is the dashboard, the principal view where customer can see what are the types of insurance Luz del Alba™ offers.
+
+We have a reactive comunication with `rate` service, this because if new coverages are created, this will immediately be reflected in the frontend.
+
+Once you click on Details, you will be able to see the coverages available for that module. e.g. :
+
+![alt text][module-detail]
+
+[module-detail]: assets/image2.jpg
+
+If you decided to go ahead and request a quote click on "Get a Quote", a form similar to this will be shown
+
+![alt text][form-for-quota]
+
+[form-for-quota]: assets/image3.jpg
+
+When you fill all the requested inputs, the rate for you will be shown, pleace click on "Buy" to start enjoying of your new insurance.
+
+![alt text][buy]
+
+[buy]: assets/image4.jpg
