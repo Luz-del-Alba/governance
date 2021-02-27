@@ -85,6 +85,8 @@ Once you click on Details, you will be able to see the coverages available for t
 
 [module-detail]: assets/image2.jpg
 
+### Get a Quote
+
 If you decided to go ahead and request a quote click on "Get a Quote", a form similar to this will be shown
 
 ![alt text][form-for-quota]
@@ -96,3 +98,11 @@ When you fill all the requested inputs, the rate for you will be shown, pleace c
 ![alt text][buy]
 
 [buy]: assets/image4.jpg
+
+### Users
+
+If you want to query the current users, and their acquired policies  please go ahead and click under "Users"
+
+![alt text][users]
+
+[users]: assets/image5.jpg
