@@ -77,7 +77,7 @@ policy: |
 
 This is the dashboard, the principal view where customer can see what are the types of insurance Luz del Alba™ offers.
 
-We have a reactive comunication with `rate` service, this because if new coverages are created, this will immediately be reflected in the frontend.
+We have a reactive communication with `rate` service, this because if new coverages are created, this will immediately be reflected in the frontend.
 
 Once you click on Details, you will be able to see the coverages available for that module. e.g. :
 
