@@ -14,7 +14,7 @@
 
 Luz del Alba™ platform is mounted in an Ubuntu VM instance on Azure cloud.
 
-Since we are using docker to release the artifacts, within the VM we are managing Docker Swarm.
+Since we are using docker to release the artifacts, within the VM we are using `Docker Swarm`.
 
 ### CI/CD
 
